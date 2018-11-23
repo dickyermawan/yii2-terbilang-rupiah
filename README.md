@@ -28,6 +28,5 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```
-php
-<?= \dickyermawan\terbilang\Rupiah::terbilang(5500); ?>
+<?= \dickyermawan\terbilang\Rupiah::terbilang(5500); ?>  // Lima Ribu Lima Ratus
 ```
