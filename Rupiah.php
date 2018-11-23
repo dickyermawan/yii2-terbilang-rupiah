@@ -5,11 +5,11 @@
  * @Linkedin: linkedin.com/in/dickyermawan 
  * @Date: 2018-11-23 19:52:47 
  * @Last Modified by: Dicky Ermawan S., S.T., MTA
- * @Last Modified time: 2018-11-23 20:31:45
+ * @Last Modified time: 2018-11-23 20:45:31
  */
 
 
-namespace dickyermawan\convert;
+namespace dickyermawan\terbilang;
 
 /**
  * This is just an example.
@@ -18,7 +18,7 @@ class Rupiah extends \yii\base\Widget
 {
     public static function terbilang($nilai)
     {
-        return $this->convert($nilai);
+        return $this->convert($nilai); 
     }
 
     protected function convert($nilai)

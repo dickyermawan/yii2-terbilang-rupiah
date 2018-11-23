@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist dickyermawan/yii2-terbilang-rupiah "*"
+php composer.phar require --prefer-dist dickyermawan/yii2-terbilang-rupiah "~1.0"
 ```
 
 or add
 
 ```
-"dickyermawan/yii2-terbilang-rupiah": "*"
+"dickyermawan/yii2-terbilang-rupiah": "~1.0"
 ```
 
 to the require section of your `composer.json` file.
@@ -27,5 +27,7 @@ Usage
 
 Once the extension is installed, simply use it in your code by  :
 
-```php
-<?= \dickyermawan\terbilang\AutoloadExample::widget(); ?>```
+```
+php
+<?= \dickyermawan\terbilang\Rupiah::terbilang(5500); ?>
+```
