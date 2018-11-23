@@ -1,0 +1,21 @@
+{
+    "name": "dickyermawan/yii2-terbilang-rupiah",
+    "description": "Extensions to convert numbers into text in rupiah (Terbilang dalam Rupiah).",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","terbilang","rupiah","terbilang rupiah"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dicky Ermawan S",
+            "email": "wanasaja@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "dickyermawan\\terbilang\\": ""
+        }
+    }
+}
