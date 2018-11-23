@@ -5,23 +5,23 @@
  * @Linkedin: linkedin.com/in/dickyermawan 
  * @Date: 2018-11-23 19:52:47 
  * @Last Modified by: Dicky Ermawan S., S.T., MTA
- * @Last Modified time: 2018-11-23 19:57:45
+ * @Last Modified time: 2018-11-23 20:31:45
  */
 
 
-namespace dickyermawan\terbilang;
+namespace dickyermawan\convert;
 
 /**
  * This is just an example.
  */
 class Rupiah extends \yii\base\Widget
 {
-    public function run()
+    public static function terbilang($nilai)
     {
-        return "Hello Rupiah!";
+        return $this->convert($nilai);
     }
 
-    protected function terbilang($nilai)
+    protected function convert($nilai)
     {
         $huruf = array("", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam", "Tujuh", "Delapan", "Sembilan", "Sepuluh", "Sebelas");
         if ($nilai == 0) {
@@ -29,23 +29,23 @@ class Rupiah extends \yii\base\Widget
         } elseif ($nilai < 12 & $nilai != 0) {
             return "" . $huruf[$nilai];
         } elseif ($nilai < 20) {
-            return Terbilang($nilai - 10) . " Belas ";
+            return convert($nilai - 10) . " Belas ";
         } elseif ($nilai < 100) {
-            return Terbilang($nilai / 10) . " Puluh " . Terbilang($nilai % 10);
+            return convert($nilai / 10) . " Puluh " . convert($nilai % 10);
         } elseif ($nilai < 200) {
-            return " Seratus " . Terbilang($nilai - 100);
+            return " Seratus " . convert($nilai - 100);
         } elseif ($nilai < 1000) {
-            return Terbilang($nilai / 100) . " Ratus " . Terbilang($nilai % 100);
+            return convert($nilai / 100) . " Ratus " . convert($nilai % 100);
         } elseif ($nilai < 2000) {
-            return " Seribu " . Terbilang($nilai - 1000);
+            return " Seribu " . convert($nilai - 1000);
         } elseif ($nilai < 1000000) {
-            return Terbilang($nilai / 1000) . " Ribu " . Terbilang($nilai % 1000);
+            return convert($nilai / 1000) . " Ribu " . convert($nilai % 1000);
         } elseif ($nilai < 1000000000) {
-            return Terbilang($nilai / 1000000) . " Juta " . Terbilang($nilai % 1000000);
+            return convert($nilai / 1000000) . " Juta " . convert($nilai % 1000000);
         } elseif ($nilai < 1000000000000) {
-            return Terbilang($nilai / 1000000000) . " Milyar " . Terbilang($nilai % 1000000000);
+            return convert($nilai / 1000000000) . " Milyar " . convert($nilai % 1000000000);
         } elseif ($nilai < 100000000000000) {
-            return Terbilang($nilai / 1000000000000) . " Trilyun " . Terbilang($nilai % 1000000000000);
+            return convert($nilai / 1000000000000) . " Trilyun " . convert($nilai % 1000000000000);
         } elseif ($nilai <= 100000000000000) {
             return "Maaf Tidak Dapat di Proses Karena Jumlah nilai Terlalu Besar ";
         }
