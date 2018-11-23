@@ -28,5 +28,5 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```
-<?= \dickyermawan\terbilang\Rupiah::terbilang(5500); ?>  // Lima Ribu Lima Ratus
+<?= \dickyermawan\terbilang\Rupiah::terbilang(5500); ?>  // Lima Ribu Lima Ratus 
 ```
