@@ -9,7 +9,7 @@
  */
 
 
-namespace dickyermawan\terbilang;
+namespace dickyermawan\base;
 
 use NumberFormatter;
 
